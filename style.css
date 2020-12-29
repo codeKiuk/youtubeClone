@@ -1,0 +1,230 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --darkgrey-color: #909090;
+  --lightgrey-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+
+  /* Font Size */
+  --font-large: 14px;
+  --font-medium: 12px;
+  --font-small: 10px;
+  --font-micro: 8px;
+}
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+hr {
+  width: 92%;
+  border: 10% solid grey;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--white-color);
+}
+
+/*  Header  */
+header {
+  background-color: black;
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+}
+div.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+div.youtube {
+  padding: 0px 0px 0px 5px;
+}
+
+div.title i {
+  color: var(--red-color);
+  padding: 5px;
+}
+nav > i {
+  padding: 5px;
+}
+nav.search-menu {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: var(--white-color);
+}
+nav.search-menu button {
+  background-color: var(--black-color);
+}
+nav.search-menu button i {
+  color: var(--white-color);
+}
+
+/*  Video   */
+section.video {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--black-color);
+}
+section.video video {
+  width: 100%;
+  height: 100%;
+}
+
+/*  information */
+main section.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 12px;
+}
+div.hashtag {
+  color: var(--blue-color);
+  font-size: 0.7rem;
+  padding: 3px 5px;
+}
+section.info div.title-menu {
+  display: flex;
+  padding: 5px;
+}
+
+section.info div.title-menu .title.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+section.info div.title-menu button.toggle {
+  align-self: baseline;
+}
+section.info div.title-menu button.toggle.clicked {
+  transform: rotate(180deg);
+}
+
+div.views {
+  color: var(--darkgrey-color);
+  font-size: 0.4rem;
+  padding: 3px 5px;
+}
+
+/* icons */
+ul.icon {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  justify-content: space-evenly;
+}
+ul.icon li {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+ul.icon i {
+  margin: 0 auto;
+}
+
+li.icon div.icon-below {
+  margin: 8px 0px;
+  font-size: 0.8rem;
+  color: var(--darkgrey-color);
+}
+
+/* channel info */
+section.channel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 12px;
+}
+section.channel a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+section.channel i {
+  padding: 12px;
+}
+section.channel div.profile {
+  display: flex;
+  align-items: center;
+}
+div.description div.subscribenum {
+  font-size: 0.7rem;
+  color: var(--darkgrey-color);
+}
+section.channel button.subscribe {
+  font-size: 0.7rem;
+  padding: 12px;
+  color: var(--red-color);
+}
+
+/* Footer */
+button.nextBtn {
+  font-size: 0.7rem;
+  padding: 5px 12px;
+  margin-left: 3px;
+  color: var(--darkgrey-color);
+}
+ul.videos {
+  list-style: none;
+  margin: 0;
+  padding: 5px 12px;
+}
+ul.videos img {
+  width: 40%;
+}
+li.playlist {
+  display: flex;
+  padding: 5px 0px 5px 0px;
+}
+li.playlist div.description {
+  padding: 0px 12px 0px 12px;
+}
+div.description div.description2 {
+  font-size: 0.8rem;
+  color: var(--darkgrey-color);
+}
+div.description div.description3 {
+  font-size: 0.7rem;
+  color: var(--lightgrey-color);
+}
+
+@media screen and (min-width: 768px) {
+  section.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+  }
+  section.video {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+  }
+  section.video video {
+    width: 100%;
+    height: 100%;
+  }
+}
